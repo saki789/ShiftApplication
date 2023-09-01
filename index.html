@@ -78,9 +78,27 @@
     </nav>
     <main>
          <section id="shift-entry">
-        <h2>Shift Entry</h2>
-        <!-- Shift entry form goes here -->
-    </section>
+    <h2>Shift Entry</h2>
+    <form id="shift-entry-form">
+        <label for="date">Date:</label>
+        <input type="date" id="date" required>
+        
+        <label for="site-name">Site Name:</label>
+        <input type="text" id="site-name" required>
+        
+        <label for="guard-name">Guard's Name:</label>
+        <input type="text" id="guard-name" required>
+        
+        <label for="time-in">Time In:</label>
+        <input type="time" id="time-in" required>
+        
+        <label for="time-out">Time Out:</label>
+        <input type="time" id="time-out" required>
+
+        <button type="submit">Submit</button>
+    </form>
+    <div id="success-message" style="display: none;">Shift successfully submitted.</div>
+         </section>
     <section id="view-previous-shifts">
         <h2>View Previous Shifts</h2>
         <p>Select a date range to view past security guard shifts:</p>
