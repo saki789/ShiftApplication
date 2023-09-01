@@ -3,65 +3,107 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    /* Reset some default styles */
     <style>
-        /* Reset some default styles */
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-        /* Basic styling */
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f2f2f2;
-        }
+/* Basic styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+}
 
-        header {
-            background-color: #007BFF;
-            color: #fff;
-            text-align: center;
-            padding: 1rem 0;
-        }
+header {
+    background-color: #007BFF;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+}
 
-        nav {
-            background-color: #333;
-            color: #fff;
-            padding: 0.5rem;
-        }
+nav {
+    background-color: #333;
+    color: #fff;
+    padding: 0.5rem;
+}
 
-        nav ul {
-            list-style: none;
-            display: flex;
-            justify-content: center;
-        }
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
 
-        nav ul li {
-            margin-right: 1rem;
-        }
+nav ul li {
+    margin-right: 1rem;
+}
 
-        nav a {
-            text-decoration: none;
-            color: #fff;
-        }
+nav a {
+    text-decoration: none;
+    color: #fff;
+}
 
-        main {
-            padding: 2rem;
-        }
+main {
+    padding: 2rem;
+}
 
-        section {
-            background-color: #fff;
-            padding: 2rem;
-            margin-bottom: 2rem;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
+section {
+    background-color: #fff;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
 
-        h2 {
-            font-size: 1.5rem;
-            margin-bottom: 1rem;
-        }
-    </style>
+h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+/* Style for the Shift Entry form */
+#shift-entry-form {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+#shift-entry-form label {
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+#shift-entry-form input[type="date"],
+#shift-entry-form input[type="time"],
+#shift-entry-form input[type="text"] {
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+#shift-entry-form button {
+    background-color: #007BFF;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#shift-entry-form button:hover {
+    background-color: #0056b3;
+}
+
+#success-message {
+    color: #008000;
+    text-align: center;
+    margin-top: 1rem;
+}
+
+/* Add styles for other sections here */>
+        </style>
     <title>Security Company Dashboard</title>
 </head>
 <body>
